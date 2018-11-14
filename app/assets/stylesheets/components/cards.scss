@@ -1,0 +1,31 @@
+.card {
+	margin: 0 0 10% 0;
+	padding: 2% 3% 2% 3%;
+	width: 300px;
+	height: 250px;
+	background-color: white;
+    border-radius: 15px;
+	box-shadow: 0 5px 9px 0 rgba(0,0,0,0.3);
+    transition-duration: 0.4s;
+}
+
+.card:hover {
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.3);
+}
+
+.logo-card {
+	width: 30px;
+	height: 30px;
+}
+
+.titre {
+	color: black;
+	text-align: center;
+	font-weight: bold;
+	font-size: 36px;
+}
+
+.text {
+	color: #e0e0e0;
+	text-align: center;
+}
