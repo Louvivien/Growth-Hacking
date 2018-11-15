@@ -10,7 +10,12 @@ Pour réaliser ce travail, nous avons brainstormé. Ensemble, nous avons décid�
 
 
 
----
+## La team
+Ce programme est made in Station F by P. de la Tour & F. Pinto & A. Reau & C. Avronsart & V. Richaud avec amour ! Bonne correction les amis 😘
+
+
+## Une interface pour notre application
+Notre magnifique interface permet simplement de lancer toutes nos méthodes avec grande facilité et bonheur. Protitez du tout intégrer pour une expérience utilisateur hors du commun ! Et pour la première en France ! Où ca se passe ? Directement sur la page d'accueil [c'est ici !](https://the-hacking-project-prog.herokuapp.com/)
 
 
 ### Metric :straight_ruler:
@@ -81,4 +86,5 @@ Installation de google analytics pour suivi :
 Nous pensons que nous ne disposons pas d'assez de temps (vous non plus d'ailleurs) entre l'implémentation et la correction pour tirer des conclusions pertinentes. :broken_heart:
 
 ![Capture d'ecran Mailchimp](https://imageshack.com/a/img922/2181/MkrmqY.png)
+
 
