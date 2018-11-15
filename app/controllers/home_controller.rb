@@ -1,38 +1,32 @@
 class HomeController < ApplicationController
-<<<<<<< HEAD
-  def index
-  end
-=======
- before_action :set_user, only: [:show, :edit, :update, :destroy]
-def index
- @user = User.all
-end 
 
-def show
+before_action :set_user, only: [:show, :edit, :update, :destroy]
+	def index
+	 @user = User.all
+	end 
 
-end
+	def show
 
-def edit
-end
+	end
 
-def update
-end
+	def edit
+	end
 
-def destroy
-	@user.destroy
-	redirect_to root_path
-end
+	def update
+	end
 
-private 
+	def destroy
+		@user.destroy
+		redirect_to root_path
+	end
 
-def set_user
- @user = User.find(params[:id])
-end
+	private 
 
-def User_params
-	params.require(:user).permit(:email, :password)
-end
+	def set_user
+	 @user = User.find(params[:id])
+	end
 
-
->>>>>>> 4c725c92ecc40d5bee9dc885e76ce0cff511aa9e
+	def User_params
+		params.require(:user).permit(:email, :password)
+	end
 end
