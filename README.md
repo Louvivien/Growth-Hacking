@@ -5,7 +5,7 @@ Pour voir l'app déployée, [c'est ici !](https://the-hacking-project-prog.herok
 Pour réaliser ce travail, nous avons brainstormé. Ensemble, nous avons décidé :
 * de l'aspect global de la landing page
 * des cibles à viser
-* des outils à utilisers
+* des outils à utiliser
 * de la répartition des tâches
 
 
@@ -36,13 +36,13 @@ Intégration de balises pour optimiser l'aperçu des liens lors du partage sur F
 Création d'un bot twitter https://twitter.com/ElloThpm/with_replies qui permet de s'adresser à nos trois cibles. Nous avons considéré que Twitter nous permettait de toucher de manière assez rapide et massive nos 3 cibles, en restant peu intrusifs.
 
  <br>
-La méthode 1 récupére des utilisateurs en fonction d'un hashtag "codedev"et leur envoie un message.
+La méthode 1 récupère des utilisateurs en fonction d'un hashtag "codedev"et leur envoie un message.
 
  <br>
-La méthode 2 récupére des utilisateurs en fonction d'un hashtag "reims"et leur envoie un message.
+La méthode 2 récupère des utilisateurs en fonction d'un hashtag "reims"et leur envoie un message.
 
 <br>
-La méthode 3 récupére des utilisateurs en fonction d'un hashtag "girlscode"et leur envoie un message.
+La méthode 3 récupère des utilisateurs en fonction d'un hashtag "girlscode"et leur envoie un message.
 
 ---
 
