@@ -5,6 +5,7 @@ ruby '2.5.1'
 
 gem 'dotenv', '~> 2.5'
 gem 'twitter', '~> 6.2'
+gem 'gibbon'
 gem 'google-api-client', '~> 0.11'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'
