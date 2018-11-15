@@ -5,9 +5,9 @@ Rails.application.routes.draw do
         post '/landing1', to: 'home#landing1create'
 
         get '/landing2', to: 'home#landing2'
-        post '/landing1', to: 'home#landing1create'
+        post '/landing2', to: 'home#landing2create'
 
         get '/landing3', to: 'home#landing3'
-       	post '/landing1', to: 'home#landing1create'
+       	post '/landing3', to: 'home#landing3create'
 
 end
