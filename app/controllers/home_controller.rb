@@ -35,7 +35,7 @@ gibbon = Gibbon::Request.new(api_key: "ff53197472e303cf758de97f03779caf-us19")
 			status: "subscribed",
 			FNAME: "First name",
 			LNAME: "Last name"
-				})	
+				})
 	redirect_to landing1_path
 end
 
@@ -50,7 +50,7 @@ gibbon = Gibbon::Request.new(api_key: "ff53197472e303cf758de97f03779caf-us19")
 			status: "subscribed",
 			FNAME: "First name",
 			LNAME: "Last name"
-				})	
+				})
 	redirect_to landing2_path
 end
 
@@ -65,7 +65,7 @@ gibbon = Gibbon::Request.new(api_key: "ff53197472e303cf758de97f03779caf-us19")
 			status: "subscribed",
 			FNAME: "First name",
 			LNAME: "Last name"
-				})	
+				})
 	redirect_to landing3_path
 end
 
