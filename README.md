@@ -33,7 +33,7 @@ Intégration de balises pour optimiser l'aperçu des liens lors du partage sur F
 ### Moyens :package:
 
 #### Twitter
-Création d'un bot twitter qui permet de s'adresser à nos trois cibles. Nous avons considéré que Twitter nous permettait de toucher de manière assez rapide et massive nos 3 cibles, en restant peu intrusifs.
+Création d'un bot twitter https://twitter.com/ElloThpm/with_replies qui permet de s'adresser à nos trois cibles. Nous avons considéré que Twitter nous permettait de toucher de manière assez rapide et massive nos 3 cibles, en restant peu intrusifs.
 
  <br>
 La méthode 1 récupére des utilisateurs en fonction d'un hashtag "codedev"et leur envoie un message.
@@ -85,6 +85,6 @@ Installation de google analytics pour suivi :
 
 Nous pensons que nous ne disposons pas d'assez de temps (vous non plus d'ailleurs) entre l'implémentation et la correction pour tirer des conclusions pertinentes. :broken_heart:
 
-![Capture d'ecran Mailchimp](https://imageshack.com/a/img922/2181/MkrmqY.png)
+
 
 
