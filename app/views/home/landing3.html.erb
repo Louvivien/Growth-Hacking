@@ -1,1 +1,135 @@
-landing3.html.erb
+<title>THP LP3</title>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    	<span class="navbar-toggler-icon"></span>
+  	</button>
+	<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+			<a class="navbar-brand" href="#">The Hacking Project</a>
+		<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+	  		<li class="nav-item">
+	    		<a class="nav-link" href="#">Programme</a>
+	  		</li>
+	  		<li class="nav-item">
+	    		<a class="nav-link" href="#">Ville</a>
+	  		</li>
+	  		<li class="nav-item">
+	    		<a class="nav-link" href="#">À Propos</a>
+	  		</li>
+	  		<li class="nav-item">
+	    		<a class="nav-link" href="#">Blog</a>
+	  		</li>
+	  		<li class="nav-item">
+	    		<a class="nav-link" href="#">FAQ</a>
+	  		</li>
+	  		<li class="nav-item">
+	    		<a class="nav-link" href="#">Préparcours</a>
+	  		</li>
+		</ul>
+	</div>
+</nav>
+
+<div class="container">
+	<main>
+		<div class="row">
+			<div class="col-lg-6">
+				<h1 class="text-left">THP</h1>
+				<h2 class="text-left">APPRENDS À CODER EN COMMUNAUTÉ</h2>
+			 	<a href="#newsletter" class="btn">NEWSLETTER THP 🍉</a>
+			</div>
+			<div align="center" class="col-lg-6">
+				<%= image_tag("logo-thp-large.png", :alt => "thp" , :class => "img-fluid logo-large" )%>
+			</div>
+		</div>
+	</main>
+
+	<h1 class="titre2">THP résumé en 4 points</h1>
+
+	<div class="content">
+		<div class="row">
+			<div class="col-lg-4 col-md-6 col-xs-12">
+				<div class="card">
+					<%= image_tag("hacking-project.png", :alt => "thp" , :class => "logo-card" )%>
+					<div class="titre">Intense, et en groupe</div>
+					<div class="text text-left">T.H.P, ce n'est pas de tous repos, mais vos camarades seront là pour vous aider, et souvent jusque très tard ;)</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-xs-12">
+				<div class="card">
+					<%= image_tag("hacking-project.png", :alt => "thp" , :class => "logo-card" )%>
+					<div class="titre">Une caution</div>
+					<div class="text text-left">Nous nous investissons beaucoup pour vous : la caution est un moyen d'être sûr que vous resterez investis vous aussi !</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-xs-12">
+				<div class="card">
+					<%= image_tag("hacking-project.png", :alt => "thp" , :class => "logo-card" )%>
+					<div class="titre">En anglais</div>
+					<div class="text text-left">L'anglais est la langue de la programmation. Nous vous recommandons de ne pas faire THP si vous n'avez pas de bases (10/20 au bac suffit).</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-xs-12">
+				<div class="card">
+					<%= image_tag("hacking-project.png", :alt => "thp" , :class => "logo-card" )%>
+					<div class="titre">Pas de locaux, ni de professeurs</div>
+					<div class="text text-left">Espaces de coworking, bibliothèques, appartement, devriendront rapidement vos nouveaux lieux de vie.</div>
+				</div>
+			</div>
+	</div>
+</div>
+	<div id="newsletter"></div>
+	<h1 class="titre2">La newsletter qui déchire sa mémé !</h1>
+
+	<div class="form-container">
+		<form class="new_person" id="new_person" accept-charset="UTF-8" method="post">
+  			<input name="utf8" type="hidden" value="&#x2713;" />
+  			<input type="hidden" name="authenticity_token" value="bL13x72pldyDD8bgtkjKQakJCpd4A8JdXGbfksxBDHdf1uC0kCMqe2tvVdUYfidJt0fj3ihC4NxiVHv8GVYxJA==" />
+  			<input class="form-control" type="email" name="email" id="email" placeholder="Enter email" />
+      		<button type="submit" class="btn2">S'inscrire</button>
+    	</form>
+	</div>
+
+<footer>
+	<div class="row">
+		<div class="col-lg-3 col-md-6 col-xs-12">
+			<p class="footer-titre">À propos de nous</p>
+				<ul>
+					<li><a class="footer-text" href="#">CGU</a></li>
+					<li><a class="footer-text" href="#">Contactez-nous</a></li>
+					<li><a class="footer-text" href="#">Presse</a></li>
+				</ul>
+		</div>
+		<div class="col-lg-3 col-md-6 col-xs-12">
+			<p class="footer-titre">Liens pratiques</p>
+				<ul>
+					<li><a class="footer-text" href="#">Tarifs</a></li>
+					<li><a class="footer-text" href="#">Villes</a></li>
+					<li><a class="footer-text" href="#">Ouvrir une ville</a></li>
+					<li>
+						<% if user_signed_in? %>
+						<%= link_to 'se deconnecter', destroy_user_session_path, method: :delete %>
+						<% else %>
+						<%= link_to 'se connecter', new_user_session_path %>	
+						<%end %>
+					</li>
+				</ul>
+		</div>
+		<div class="col-lg-3 col-md-6 col-xs-12">
+			<p class="footer-titre">Pourquoi nous ?</p>
+				<ul>
+					<li><a class="footer-text" href="#">Une communauté soudée</a></li>
+					<li><a class="footer-text" href="#">Un cursus gratuit et qualitatif</a></li>
+					<li><a class="footer-text" href="#">Une pédagogie innovante</a></li>
+				</ul>
+		</div>
+		<div class="col-lg-3 col-md-6 col-xs-12">
+			<p class="footer-titre">Suis-nous !</p>
+				<ul>
+					<li><a class="footer-text" href="#">Twitter</a></li>
+					<li><a class="footer-text" href="#">Facebook</a></li>
+					<li><a class="footer-text" href="#">Instagram</a></li>
+					<li><a class="footer-text" href="#">Linkedin</a></li>
+				</ul>
+		</div>
+	</div>
+</footer>
