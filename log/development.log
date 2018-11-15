@@ -5830,3 +5830,26 @@ Processing by HomeController#landing1 as HTML
 Completed 200 OK in 82ms (Views: 80.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-11-15 12:43:17 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/louvivien/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 741ms (Views: 721.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/etudiants" for 127.0.0.1 at 2018-11-15 12:43:21 +0100
+Processing by HomeController#landing1 as HTML
+  Rendering home/landing1.html.erb within layouts/application
+  Rendered home/landing1.html.erb within layouts/application (23.7ms)
+Completed 200 OK in 108ms (Views: 106.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/etudiants" for 127.0.0.1 at 2018-11-15 12:43:27 +0100
+Processing by HomeController#landing1 as HTML
+  Rendering home/landing1.html.erb within layouts/application
+  Rendered home/landing1.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 80ms (Views: 78.8ms | ActiveRecord: 0.0ms)
+
+
