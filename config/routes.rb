@@ -10,4 +10,9 @@ Rails.application.routes.draw do
         get '/landing3', to: 'home#landing3'
        	post '/landing3', to: 'home#landing3create'
 
+       	 get '/codedev' , to: 'home#codedev'
+       	 get '/reims' , to: 'home#reims'
+       	 get '/girlscode' , to: 'home#girlscode'
+
+
 end

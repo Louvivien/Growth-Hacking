@@ -35,7 +35,10 @@ gibbon = Gibbon::Request.new(api_key: "ff53197472e303cf758de97f03779caf-us19")
 			status: "subscribed",
 			FNAME: "First name",
 			LNAME: "Last name"
-				})	end
+				})	
+	redirect_to
+
+end
 
 
 	def landing2create
@@ -62,6 +65,25 @@ gibbon = Gibbon::Request.new(api_key: "ff53197472e303cf758de97f03779caf-us19")
 			FNAME: "First name",
 			LNAME: "Last name"
 				})	end
+
+
+
+	def codedev
+		TwitterCommentCode.new.perform
+		redirect_to '/'
+	end
+
+	def reims
+		TwitterCommentReims.new.perform
+		redirect_to '/'
+	end
+
+	def girlscode
+		TwitterCommentGirls.new.perform
+		redirect_to '/'
+	end
+
+
 
 
 

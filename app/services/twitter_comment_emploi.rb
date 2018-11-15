@@ -2,7 +2,7 @@ require "twitter"
 require "dotenv"
 Dotenv.load
 
-class TwitterCommentEmploi
+class TwitterCommentReims
 
 	attr_accessor :client
 
@@ -16,8 +16,8 @@ class TwitterCommentEmploi
 	end
 
 	def perform
-		@client.search("#poleemplois", result_type: "recent").take(10).each do |tweet|
- 		@client.update("@#{tweet.user.screen_name} Envie d'une formation gratuite en programmation ? Rejoins THP https://thehackingproject.org/")
+		@client.search("#reims", result_type: "recent").take(10).each do |tweet|
+ 		@client.update("@#{tweet.user.screen_name} Envie d'une formation gratuite en programmation ? Rejoins THP http://bit.do/girlycody")
 			# @client.update("Envie d'une formation gratuite en programmation ? Rejoins THP https://thehackingproject.org/", in_reply_to_tweet_id:tweet.user.id)
 		end
 	end

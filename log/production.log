@@ -1,0 +1,28 @@
+I, [2018-11-15T17:20:36.809854 #3919]  INFO -- : [3c0c7711-474a-48cd-b9ae-bc2142494f86] Started GET "/landing1" for 127.0.0.1 at 2018-11-15 17:20:36 +0100
+I, [2018-11-15T17:20:36.909692 #3919]  INFO -- : [3c0c7711-474a-48cd-b9ae-bc2142494f86] Processing by HomeController#landing1 as HTML
+I, [2018-11-15T17:20:36.942635 #3919]  INFO -- : [3c0c7711-474a-48cd-b9ae-bc2142494f86]   Rendering home/landing1.html.erb within layouts/application
+I, [2018-11-15T17:20:36.960012 #3919]  INFO -- : [3c0c7711-474a-48cd-b9ae-bc2142494f86]   Rendered home/landing1.html.erb within layouts/application (14.1ms)
+I, [2018-11-15T17:20:36.974273 #3919]  INFO -- : [3c0c7711-474a-48cd-b9ae-bc2142494f86] Completed 200 OK in 64ms (Views: 38.8ms)
+I, [2018-11-15T17:20:39.954791 #3919]  INFO -- : [ddf5cee2-dbe7-4ee8-9cc2-911d70e647e3] Started POST "/landing1" for 127.0.0.1 at 2018-11-15 17:20:39 +0100
+I, [2018-11-15T17:20:39.956949 #3919]  INFO -- : [ddf5cee2-dbe7-4ee8-9cc2-911d70e647e3] Processing by HomeController#landing1create as HTML
+I, [2018-11-15T17:20:39.961474 #3919]  INFO -- : [ddf5cee2-dbe7-4ee8-9cc2-911d70e647e3]   Parameters: {"utf8"=>"✓", "authenticity_token"=>"6/C7ymsbVX8ZzGzz1Oz7JHzXrf9T0O/70quz2/FGwuO2bHxnS2UQ7GGz8yoaTSeEpopZ3xnvnsQc2jmYJSdHfg==", "email"=>"thosfdsgfdsgfdfsfdsgfdfsgfdg////fdgfdsgfdsgsd@gmail.com"}
+I, [2018-11-15T17:20:40.249597 #3919]  INFO -- : [ddf5cee2-dbe7-4ee8-9cc2-911d70e647e3] Completed 500 Internal Server Error in 288ms
+F, [2018-11-15T17:20:40.251259 #3919] FATAL -- : [ddf5cee2-dbe7-4ee8-9cc2-911d70e647e3]   
+F, [2018-11-15T17:20:40.251747 #3919] FATAL -- : [ddf5cee2-dbe7-4ee8-9cc2-911d70e647e3] Gibbon::MailChimpError (the server responded with status 400 @title="Member Exists", @detail="thosfdsgfdsgfdfsfdsgfdfsgfdg////fdgfdsgfdsgsd@gmail.com is already a list member. Use PUT to insert or update list members.", @body={"type"=>"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/", "title"=>"Member Exists", "status"=>400, "detail"=>"thosfdsgfdsgfdfsfdsgfdfsgfdg////fdgfdsgfdsgsd@gmail.com is already a list member. Use PUT to insert or update list members.", "instance"=>"94377808-7e2f-4f7a-a02d-2b984a42223d"}, @raw_body="{\"type\":\"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/\",\"title\":\"Member Exists\",\"status\":400,\"detail\":\"thosfdsgfdsgfdfsfdsgfdfsgfdg////fdgfdsgfdsgsd@gmail.com is already a list member. Use PUT to insert or update list members.\",\"instance\":\"94377808-7e2f-4f7a-a02d-2b984a42223d\"}", @status_code=400):
+F, [2018-11-15T17:20:40.251816 #3919] FATAL -- : [ddf5cee2-dbe7-4ee8-9cc2-911d70e647e3]   
+F, [2018-11-15T17:20:40.251913 #3919] FATAL -- : [ddf5cee2-dbe7-4ee8-9cc2-911d70e647e3] app/controllers/home_controller.rb:31:in `landing1create'
+I, [2018-11-15T17:21:19.625356 #3919]  INFO -- : [772e3ada-56a9-4054-aef8-48d9977f8887] Started GET "/" for 127.0.0.1 at 2018-11-15 17:21:19 +0100
+I, [2018-11-15T17:21:19.627483 #3919]  INFO -- : [772e3ada-56a9-4054-aef8-48d9977f8887] Processing by HomeController#index as HTML
+I, [2018-11-15T17:21:19.634814 #3919]  INFO -- : [772e3ada-56a9-4054-aef8-48d9977f8887]   Rendering home/index.html.erb within layouts/application
+I, [2018-11-15T17:21:19.638936 #3919]  INFO -- : [772e3ada-56a9-4054-aef8-48d9977f8887]   Rendered home/index.html.erb within layouts/application (1.3ms)
+I, [2018-11-15T17:21:19.642472 #3919]  INFO -- : [772e3ada-56a9-4054-aef8-48d9977f8887] Completed 200 OK in 15ms (Views: 7.9ms)
+I, [2018-11-15T17:21:45.978050 #3919]  INFO -- : [9f45c525-7934-45e9-b519-93891a21da44] Started GET "/landing2" for 127.0.0.1 at 2018-11-15 17:21:45 +0100
+I, [2018-11-15T17:21:45.979904 #3919]  INFO -- : [9f45c525-7934-45e9-b519-93891a21da44] Processing by HomeController#landing2 as HTML
+I, [2018-11-15T17:21:45.986713 #3919]  INFO -- : [9f45c525-7934-45e9-b519-93891a21da44]   Rendering home/landing2.html.erb within layouts/application
+I, [2018-11-15T17:21:45.997212 #3919]  INFO -- : [9f45c525-7934-45e9-b519-93891a21da44]   Rendered home/landing2.html.erb within layouts/application (8.6ms)
+I, [2018-11-15T17:21:46.001824 #3919]  INFO -- : [9f45c525-7934-45e9-b519-93891a21da44] Completed 200 OK in 22ms (Views: 15.4ms)
+I, [2018-11-15T17:28:43.770072 #4097]  INFO -- : [ac4e3dc7-7629-4d25-ba1c-c407c4ac45f8] Started GET "/landing2" for 127.0.0.1 at 2018-11-15 17:28:43 +0100
+I, [2018-11-15T17:28:43.774809 #4097]  INFO -- : [ac4e3dc7-7629-4d25-ba1c-c407c4ac45f8] Processing by HomeController#landing2 as HTML
+I, [2018-11-15T17:28:43.804050 #4097]  INFO -- : [ac4e3dc7-7629-4d25-ba1c-c407c4ac45f8]   Rendering home/landing2.html.erb within layouts/application
+I, [2018-11-15T17:28:43.820905 #4097]  INFO -- : [ac4e3dc7-7629-4d25-ba1c-c407c4ac45f8]   Rendered home/landing2.html.erb within layouts/application (14.6ms)
+I, [2018-11-15T17:28:43.829182 #4097]  INFO -- : [ac4e3dc7-7629-4d25-ba1c-c407c4ac45f8] Completed 200 OK in 53ms (Views: 36.3ms)
