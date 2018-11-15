@@ -7209,3 +7209,24 @@ Processing by HomeController#landing1 as HTML
 Completed 200 OK in 78ms (Views: 75.9ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-11-15 19:40:35 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/florian/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 185ms (Views: 179.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/girlscode" for 127.0.0.1 at 2018-11-15 19:40:41 +0100
+Processing by HomeController#girlscode as HTML
+Completed 500 Internal Server Error in 767ms (ActiveRecord: 0.0ms)
+
+
+  
+Twitter::Error::Forbidden (Application cannot perform write actions. Contact Twitter Platform Operations through https://support.twitter.com/forms/platform):
+  
+app/services/twitter_comment_girls.rb:20:in `block in perform'
+app/services/twitter_comment_girls.rb:19:in `each'
+app/services/twitter_comment_girls.rb:19:in `perform'
+app/controllers/home_controller.rb:85:in `girlscode'

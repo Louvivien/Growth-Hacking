@@ -16,7 +16,7 @@ class TwitterCommentCode
 	end
 
 	def perform
-		@client.search("#dev code", result_type: "recent").take(10).each do |tweet|
+		@client.search("#dev code", result_type: "recent").take(1).each do |tweet|
  		@client.update("@#{tweet.user.screen_name} Envie d'une formation gratuite en programmation ? Rejoins THP http://bit.do/etudiant12")
 			# @client.update("Envie d'une formation gratuite en programmation ? Rejoins THP https://thehackingproject.org/", in_reply_to_tweet_id:tweet.user.id)
 
