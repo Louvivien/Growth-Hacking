@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2018-11-14 15:50:46 +0100
   
 ActiveRecord::NoDatabaseError (FATAL:  database "MaGemfile_development" does not exist
@@ -5,6 +6,17 @@ ActiveRecord::NoDatabaseError (FATAL:  database "MaGemfile_development" does not
   
 activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:688:in `rescue in connect'
 activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:683:in `connect'
+=======
+Started GET "/" for 127.0.0.1 at 2018-11-14 16:01:28 +0100
+  
+PG::ConnectionBad (FATAL:  la base de données « MaGemfile_development » n'existe pas
+):
+  
+pg (1.1.3) lib/pg.rb:56:in `initialize'
+pg (1.1.3) lib/pg.rb:56:in `new'
+pg (1.1.3) lib/pg.rb:56:in `connect'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:684:in `connect'
+>>>>>>> 4c725c92ecc40d5bee9dc885e76ce0cff511aa9e
 activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:215:in `initialize'
 activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `new'
 activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `postgresql_connection'
@@ -49,6 +61,7 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
   [1m[35m (3840.9ms)[0m  [1m[35mCREATE DATABASE "MaGemfile_development" ENCODING = 'unicode'[0m
   ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
   [1m[35m (680.9ms)[0m  [1m[35mCREATE DATABASE "MaGemfile_test" ENCODING = 'unicode'[0m
@@ -89,6 +102,28 @@ Completed 200 OK in 706ms (Views: 636.0ms | ActiveRecord: 0.0ms)
 ActionController::RoutingError (No route matches [GET] "/assets/components/*"):
   
 actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+=======
+  [1m[35m (797.2ms)[0m  [1m[35mCREATE DATABASE "MaGemfile_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (490.9ms)[0m  [1m[35mCREATE DATABASE "MaGemfile_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+Started GET "/" for 127.0.0.1 at 2018-11-14 16:02:12 +0100
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.1) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
 web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
@@ -100,12 +135,7 @@ activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagge
 activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
 activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
 railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
-sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
-activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
-activesupport (5.2.1) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
-activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
-activesupport (5.2.1) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
-sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
 actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
 actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
 rack (2.0.6) lib/rack/method_override.rb:22:in `call'
@@ -120,6 +150,60 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-11-14 16:02:13 +0100
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.1) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+>>>>>>> 4c725c92ecc40d5bee9dc885e76ce0cff511aa9e
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+<<<<<<< HEAD
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.1) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.1) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+=======
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+>>>>>>> 4c725c92ecc40d5bee9dc885e76ce0cff511aa9e
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2018-11-14 15:54:56 +0100
 Processing by HomeController#index as HTML
   Rendering home/index.html.erb within layouts/application
@@ -131,6 +215,81 @@ Completed 200 OK in 1367ms (Views: 1309.5ms | ActiveRecord: 0.0ms)
 ActionController::RoutingError (No route matches [GET] "/assets/components/*"):
   
 actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+=======
+  [1m[35m (43.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (29.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2096877006566202315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to DeviseCreateUsers (20181114145612)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (28.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20181114145612_devise_create_users.rb:5
+  [1m[35m (10.2ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/migrate/20181114145612_devise_create_users.rb:39
+  [1m[35m (15.7ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  ↳ db/migrate/20181114145612_devise_create_users.rb:40
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181114145612"]]
+  ↳ bin/rails:9
+  [1m[35m (8.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-11-14 15:02:26.348595"], ["updated_at", "2018-11-14 15:02:26.348595"]]
+  ↳ bin/rails:9
+  [1m[35m (7.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(2096877006566202315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for 127.0.0.1 at 2018-11-14 16:02:42 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (uninitialized constant HomeController):
+  
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `block in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `rescue in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:56:in `load_missing_constant'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.6) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+>>>>>>> 4c725c92ecc40d5bee9dc885e76ce0cff511aa9e
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
 web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
@@ -142,12 +301,16 @@ activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagge
 activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
 activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
 railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+<<<<<<< HEAD
 sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
 activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
 activesupport (5.2.1) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
 activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
 activesupport (5.2.1) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
 sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+=======
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+>>>>>>> 4c725c92ecc40d5bee9dc885e76ce0cff511aa9e
 actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
 actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
 rack (2.0.6) lib/rack/method_override.rb:22:in `call'
@@ -162,6 +325,7 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2018-11-14 16:05:28 +0100
 Processing by HomeController#index as HTML
   Rendering home/index.html.erb within layouts/application
@@ -173,6 +337,46 @@ Completed 200 OK in 1151ms (Views: 1142.4ms | ActiveRecord: 0.0ms)
 ActionController::RoutingError (No route matches [GET] "/assets/components/*"):
   
 actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+=======
+Started GET "/" for 127.0.0.1 at 2018-11-14 16:02:44 +0100
+  
+ActionController::RoutingError (uninitialized constant HomeController):
+  
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `block in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `rescue in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:56:in `load_missing_constant'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.6) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+>>>>>>> 4c725c92ecc40d5bee9dc885e76ce0cff511aa9e
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
 web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
@@ -184,12 +388,16 @@ activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagge
 activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
 activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
 railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+<<<<<<< HEAD
 sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
 activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
 activesupport (5.2.1) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
 activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
 activesupport (5.2.1) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
 sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+=======
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+>>>>>>> 4c725c92ecc40d5bee9dc885e76ce0cff511aa9e
 actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
 actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
 rack (2.0.6) lib/rack/method_override.rb:22:in `call'
@@ -204,6 +412,7 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2018-11-14 16:07:04 +0100
 Processing by HomeController#index as HTML
   Rendering home/index.html.erb within layouts/application
@@ -430,6 +639,360 @@ Completed 200 OK in 631ms (Views: 621.4ms | ActiveRecord: 0.0ms)
 
   
 ActionController::RoutingError (No route matches [GET] "/assets/components/*"):
+=======
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2096877006566202315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(2096877006566202315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for 127.0.0.1 at 2018-11-14 16:18:23 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1559ms (Views: 1551.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 16:41:05 +0100
+  
+ActionController::RoutingError (undefined method `berfore_action' for HomeController:Class
+Did you mean?  before_action):
+  
+app/controllers/home_controller.rb:2:in `<class:HomeController>'
+app/controllers/home_controller.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2018-11-14 16:41:39 +0100
+  
+ActionController::RoutingError (undefined method `berfore_action' for HomeController:Class
+Did you mean?  before_action):
+  
+app/controllers/home_controller.rb:2:in `<class:HomeController>'
+app/controllers/home_controller.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2018-11-14 16:41:41 +0100
+  
+ActionController::RoutingError (undefined method `berfore_action' for HomeController:Class
+Did you mean?  before_action):
+  
+app/controllers/home_controller.rb:2:in `<class:HomeController>'
+app/controllers/home_controller.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2018-11-14 16:41:43 +0100
+  
+ActionController::RoutingError (undefined method `berfore_action' for HomeController:Class
+Did you mean?  before_action):
+  
+app/controllers/home_controller.rb:2:in `<class:HomeController>'
+app/controllers/home_controller.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2018-11-14 16:42:03 +0100
+  
+ActionController::RoutingError (undefined method `berfore_action' for HomeController:Class
+Did you mean?  before_action):
+  
+app/controllers/home_controller.rb:2:in `<class:HomeController>'
+app/controllers/home_controller.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2018-11-14 16:43:02 +0100
+  
+ActionController::RoutingError (undefined method `berfore_action' for HomeController:Class
+Did you mean?  before_action):
+  
+app/controllers/home_controller.rb:2:in `<class:HomeController>'
+app/controllers/home_controller.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2018-11-14 16:43:23 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 49ms (Views: 46.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 16:43:25 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (5.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (32.2ms)
+Completed 200 OK in 95ms (Views: 57.4ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-11-14 16:43:49 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 24ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-11-14 16:44:14 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oKt0u0UPzrPk5EXraTKI0iBkAOGXu4iialdqJa7a7C8AcE/bXIhQGwxGmPTdAQisIPOthU54wfAqqul5RfOlRg==", "user"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "test@gmail.com"], ["encrypted_password", "$2a$11$IEb1CKVq1r5Fe86bA3pRhewbBisqp.3SJsYp7s8dMBTXymUcUojAK"], ["created_at", "2018-11-14 15:44:14.402308"], ["updated_at", "2018-11-14 15:44:14.402308"]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (10.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 211ms (ActiveRecord: 11.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 16:44:14 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 16:44:17 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 16:44:17 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 16:44:18 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 16:44:18 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 16:44:19 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 16:44:19 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 16:44:19 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 16:44:19 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 16:44:20 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 16:44:20 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 19ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 16:44:20 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 16:44:20 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 26ms (Views: 24.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 16:44:21 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 15ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 16:44:21 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 21ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 16:44:21 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 16:44:21 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 16:53:48 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/cyril/cyril/semaine7/Jeudi/Growth-Hacking/app/views/home/index.html.erb:11: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/home/index.html.erb:11: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:03:46 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/cyril/cyril/semaine7/Jeudi/Growth-Hacking/app/views/home/index.html.erb:11: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/home/index.html.erb:11: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:21:58 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:2
+  Rendered home/index.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 33ms (Views: 25.3ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 17:22:00 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:22:00 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:2
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 17:22:01 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:22:01 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:2
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:22:23 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /home/cyril/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/did_you_mean-1.2.0/lib/did_you_mean/core_ext/name_error.rb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /home/cyril/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/did_you_mean-1.2.0/lib/did_you_mean/core_ext/name_error.rb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /home/cyril/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/did_you_mean-1.2.0/lib/did_you_mean/core_ext/name_error.rb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /home/cyril/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/did_you_mean-1.2.0/lib/did_you_mean/core_ext/name_error.rb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /home/cyril/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/did_you_mean-1.2.0/lib/did_you_mean/core_ext/name_error.rb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /home/cyril/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/did_you_mean-1.2.0/lib/did_you_mean/core_ext/name_error.rb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /home/cyril/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/did_you_mean-1.2.0/lib/did_you_mean/core_ext/name_error.rb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /home/cyril/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/did_you_mean-1.2.0/lib/did_you_mean/core_ext/name_error.rb:4
+  Rendered home/index.html.erb within layouts/application (276.4ms)
+Completed 500 Internal Server Error in 279ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `destroy_user_session' for #<#<Class:0x00007f129003f328>:0x00007f12ac994ba0>
+Did you mean?  destroy_user_session_url
+               destroy_user_session_path):
+    2: 
+    3: <%= link_to 'se connecter', new_user_session_path %>
+    4: 
+    5: <%= link_to 'se deconnecter', destroy_user_session %>
+  
+app/views/home/index.html.erb:5:in `_app_views_home_index_html_erb__4140543399164675821_69859090937000'
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:22:50 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 25ms (Views: 23.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2018-11-14 17:22:52 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+>>>>>>> 4c725c92ecc40d5bee9dc885e76ce0cff511aa9e
   
 actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -443,12 +1006,16 @@ activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagge
 activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
 activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
 railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+<<<<<<< HEAD
 sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
 activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
 activesupport (5.2.1) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
 activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
 activesupport (5.2.1) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
 sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+=======
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+>>>>>>> 4c725c92ecc40d5bee9dc885e76ce0cff511aa9e
 actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
 actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
 rack (2.0.6) lib/rack/method_override.rb:22:in `call'
@@ -463,6 +1030,7 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2018-11-14 16:09:16 +0100
 Processing by HomeController#index as HTML
   Rendering home/index.html.erb within layouts/application
@@ -598,6 +1166,63 @@ Completed 200 OK in 77ms (Views: 73.8ms | ActiveRecord: 0.0ms)
 
   
 ActionController::RoutingError (No route matches [GET] "/assets/components/*"):
+=======
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:23:39 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:2
+  Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 17:23:41 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:23:41 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:2
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 25ms (Views: 23.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 17:23:43 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:23:43 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:2
+  Rendered home/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 23ms (Views: 21.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:25:19 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2018-11-14 17:25:20 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+>>>>>>> 4c725c92ecc40d5bee9dc885e76ce0cff511aa9e
   
 actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -611,12 +1236,16 @@ activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagge
 activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
 activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
 railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+<<<<<<< HEAD
 sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
 activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
 activesupport (5.2.1) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
 activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
 activesupport (5.2.1) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
 sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+=======
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+>>>>>>> 4c725c92ecc40d5bee9dc885e76ce0cff511aa9e
 actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
 actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
 rack (2.0.6) lib/rack/method_override.rb:22:in `call'
@@ -631,6 +1260,7 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2018-11-14 16:17:22 +0100
 Processing by HomeController#index as HTML
   Rendering home/index.html.erb within layouts/application
@@ -682,6 +1312,423 @@ Completed 200 OK in 667ms (Views: 602.7ms | ActiveRecord: 0.0ms)
 
   
 ActionController::RoutingError (No route matches [GET] "/assets/components/*"):
+=======
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:27:28 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 23ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 17:27:30 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 18ms (ActiveRecord: 6.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:27:30 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 17:27:31 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:27:31 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 32ms (Views: 31.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 17:27:31 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:27:31 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 17:27:32 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:27:32 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 17:27:33 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:27:33 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 17:27:33 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:27:33 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 17:27:34 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:27:34 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:28:14 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 17:28:16 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:28:16 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 18ms (Views: 16.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 17:28:17 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:28:17 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 18ms (Views: 16.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 17:28:17 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:28:17 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 22ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:29:04 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 17:29:23 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:29:23 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 18ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:29:27 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 17:29:30 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:29:30 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 17:30:12 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:30:12 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 17:30:13 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:30:13 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 17:30:14 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:30:14 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 20ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 17:30:15 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:30:15 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 17:30:15 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:30:15 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 17:30:15 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:30:15 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 19ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 17:30:16 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:30:16 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 17:30:16 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:30:16 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 17:30:16 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:30:16 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 17:30:17 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:30:17 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 17:30:17 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:30:17 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 17:30:23 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:30:23 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2018-11-14 17:30:27 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+>>>>>>> 4c725c92ecc40d5bee9dc885e76ce0cff511aa9e
   
 actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -695,12 +1742,16 @@ activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagge
 activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
 activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
 railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+<<<<<<< HEAD
 sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
 activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
 activesupport (5.2.1) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
 activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
 activesupport (5.2.1) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
 sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+=======
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+>>>>>>> 4c725c92ecc40d5bee9dc885e76ce0cff511aa9e
 actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
 actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
 rack (2.0.6) lib/rack/method_override.rb:22:in `call'
@@ -715,6 +1766,7 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2018-11-14 16:18:13 +0100
 Processing by HomeController#index as HTML
   Rendering home/index.html.erb within layouts/application
@@ -724,6 +1776,11 @@ Completed 200 OK in 71ms (Views: 68.2ms | ActiveRecord: 0.0ms)
 
   
 ActionController::RoutingError (No route matches [GET] "/assets/components/*"):
+=======
+Started GET "/users/sign_out" for 127.0.0.1 at 2018-11-14 17:31:28 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+>>>>>>> 4c725c92ecc40d5bee9dc885e76ce0cff511aa9e
   
 actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -737,12 +1794,16 @@ activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagge
 activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
 activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
 railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+<<<<<<< HEAD
 sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
 activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
 activesupport (5.2.1) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
 activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
 activesupport (5.2.1) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
 sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+=======
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+>>>>>>> 4c725c92ecc40d5bee9dc885e76ce0cff511aa9e
 actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
 actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
 rack (2.0.6) lib/rack/method_override.rb:22:in `call'
@@ -757,6 +1818,7 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2018-11-14 16:19:58 +0100
 Processing by HomeController#index as HTML
   Rendering home/index.html.erb within layouts/application
@@ -766,6 +1828,132 @@ Completed 200 OK in 1085ms (Views: 1038.3ms | ActiveRecord: 0.0ms)
 
   
 ActionController::RoutingError (No route matches [GET] "/assets/components/*"):
+=======
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 17:31:32 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:31:32 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:31:50 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 188ms (Views: 180.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 17:31:52 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 19ms (ActiveRecord: 5.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:31:52 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 17:31:53 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:31:53 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 17:31:54 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:31:54 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 17:31:55 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:31:55 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 17:32:03 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:32:03 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 17:32:04 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:32:04 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 32ms (Views: 30.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2018-11-14 17:33:32 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+>>>>>>> 4c725c92ecc40d5bee9dc885e76ce0cff511aa9e
   
 actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -779,12 +1967,16 @@ activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagge
 activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
 activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
 railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+<<<<<<< HEAD
 sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
 activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
 activesupport (5.2.1) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
 activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
 activesupport (5.2.1) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
 sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+=======
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+>>>>>>> 4c725c92ecc40d5bee9dc885e76ce0cff511aa9e
 actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
 actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
 rack (2.0.6) lib/rack/method_override.rb:22:in `call'
@@ -799,6 +1991,7 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2018-11-14 16:20:18 +0100
 Processing by HomeController#index as HTML
   Rendering home/index.html.erb within layouts/application
@@ -808,6 +2001,11 @@ Completed 200 OK in 163ms (Views: 142.7ms | ActiveRecord: 0.0ms)
 
   
 ActionController::RoutingError (No route matches [GET] "/assets/components/*"):
+=======
+Started GET "/users/sign_out" for 127.0.0.1 at 2018-11-14 17:33:39 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+>>>>>>> 4c725c92ecc40d5bee9dc885e76ce0cff511aa9e
   
 actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -821,12 +2019,16 @@ activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagge
 activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
 activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
 railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+<<<<<<< HEAD
 sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
 activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
 activesupport (5.2.1) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
 activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
 activesupport (5.2.1) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
 sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+=======
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+>>>>>>> 4c725c92ecc40d5bee9dc885e76ce0cff511aa9e
 actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
 actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
 rack (2.0.6) lib/rack/method_override.rb:22:in `call'
@@ -841,6 +2043,7 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2018-11-14 16:21:42 +0100
 Processing by HomeController#index as HTML
   Rendering home/index.html.erb within layouts/application
@@ -852,6 +2055,107 @@ Completed 200 OK in 774ms (Views: 764.0ms | ActiveRecord: 0.0ms)
 ActionController::RoutingError (No route matches [GET] "/assets/components/*"):
   
 actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+=======
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:34:56 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:34:57 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 17ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2018-11-14 17:34:59 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+[Devise] Could not find devise mapping for path "/users/sign_out".
+This may happen for two reasons:
+
+1) You forgot to wrap your route inside the scope block. For example:
+
+  devise_scope :user do
+    get "/some/route" => "some_devise_controller"
+  end
+
+2) You are testing a Devise controller bypassing the router.
+   If so, you can explicitly tell Devise which mapping to use:
+
+   @request.env["devise.mapping"] = Devise.mappings[:user]
+
+
+Completed 404 Not Found in 17ms (ActiveRecord: 3.5ms)
+
+
+  
+AbstractController::ActionNotFound (Could not find devise mapping for path "/users/sign_out".
+This may happen for two reasons:
+
+1) You forgot to wrap your route inside the scope block. For example:
+
+  devise_scope :user do
+    get "/some/route" => "some_devise_controller"
+  end
+
+2) You are testing a Devise controller bypassing the router.
+   If so, you can explicitly tell Devise which mapping to use:
+
+   @request.env["devise.mapping"] = Devise.mappings[:user]
+
+):
+  
+devise (4.5.0) app/controllers/devise_controller.rb:90:in `unknown_action!'
+devise (4.5.0) app/controllers/devise_controller.rb:65:in `assert_is_devise_resource!'
+activesupport (5.2.1) lib/active_support/callbacks.rb:426:in `block in make_lambda'
+activesupport (5.2.1) lib/active_support/callbacks.rb:198:in `block (2 levels) in halting'
+actionpack (5.2.1) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.2.1) lib/active_support/callbacks.rb:199:in `block in halting'
+activesupport (5.2.1) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (5.2.1) lib/active_support/callbacks.rb:513:in `each'
+activesupport (5.2.1) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (5.2.1) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.2.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.1) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.1) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.1) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.6) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+>>>>>>> 4c725c92ecc40d5bee9dc885e76ce0cff511aa9e
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
 web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
@@ -863,12 +2167,16 @@ activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagge
 activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
 activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
 railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+<<<<<<< HEAD
 sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
 activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
 activesupport (5.2.1) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
 activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
 activesupport (5.2.1) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
 sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+=======
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+>>>>>>> 4c725c92ecc40d5bee9dc885e76ce0cff511aa9e
 actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
 actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
 rack (2.0.6) lib/rack/method_override.rb:22:in `call'
@@ -883,6 +2191,7 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2018-11-14 16:26:06 +0100
 Processing by HomeController#index as HTML
   Rendering home/index.html.erb within layouts/application
@@ -894,6 +2203,46 @@ Completed 200 OK in 679ms (Views: 675.5ms | ActiveRecord: 0.0ms)
 ActionController::RoutingError (No route matches [GET] "/assets/components/*"):
   
 actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+=======
+Started GET "/users/sign_out" for 127.0.0.1 at 2018-11-14 17:35:58 +0100
+  
+ActionController::RoutingError (uninitialized constant UsersController):
+  
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `block in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `rescue in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:56:in `load_missing_constant'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.6) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+>>>>>>> 4c725c92ecc40d5bee9dc885e76ce0cff511aa9e
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
 web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
@@ -905,12 +2254,16 @@ activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagge
 activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
 activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
 railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+<<<<<<< HEAD
 sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
 activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
 activesupport (5.2.1) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
 activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
 activesupport (5.2.1) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
 sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+=======
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+>>>>>>> 4c725c92ecc40d5bee9dc885e76ce0cff511aa9e
 actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
 actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
 rack (2.0.6) lib/rack/method_override.rb:22:in `call'
@@ -925,6 +2278,7 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2018-11-14 16:28:40 +0100
 Processing by HomeController#index as HTML
   Rendering home/index.html.erb within layouts/application
@@ -1230,6 +2584,46 @@ Completed 200 OK in 66ms (Views: 61.5ms | ActiveRecord: 0.0ms)
 ActionController::RoutingError (No route matches [GET] "/assets/components/*"):
   
 actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+=======
+Started GET "/users/sign_out" for 127.0.0.1 at 2018-11-14 17:37:20 +0100
+  
+ActionController::RoutingError (uninitialized constant UsersController):
+  
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `block in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `rescue in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:56:in `load_missing_constant'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.6) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+>>>>>>> 4c725c92ecc40d5bee9dc885e76ce0cff511aa9e
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
 web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
@@ -1241,12 +2635,16 @@ activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagge
 activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
 activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
 railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+<<<<<<< HEAD
 sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
 activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
 activesupport (5.2.1) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
 activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
 activesupport (5.2.1) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
 sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+=======
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+>>>>>>> 4c725c92ecc40d5bee9dc885e76ce0cff511aa9e
 actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
 actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
 rack (2.0.6) lib/rack/method_override.rb:22:in `call'
@@ -1261,6 +2659,7 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2018-11-14 16:36:02 +0100
 Processing by HomeController#index as HTML
   Rendering home/index.html.erb within layouts/application
@@ -2715,6 +4114,46 @@ Started POST "/" for 127.0.0.1 at 2018-11-14 18:44:31 +0100
 ActionController::RoutingError (No route matches [POST] "/"):
   
 actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+=======
+Started GET "/users/sign_out" for 127.0.0.1 at 2018-11-14 17:37:40 +0100
+  
+ActionController::RoutingError (uninitialized constant UsersController):
+  
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `block in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `rescue in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:56:in `load_missing_constant'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.6) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+>>>>>>> 4c725c92ecc40d5bee9dc885e76ce0cff511aa9e
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
 web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
@@ -2741,6 +4180,7 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2018-11-14 18:46:42 +0100
 Processing by HomeController#index as HTML
   Rendering home/index.html.erb within layouts/application
@@ -2809,6 +4249,53 @@ Started POST "/" for 127.0.0.1 at 2018-11-14 18:50:24 +0100
 ActionController::RoutingError (No route matches [POST] "/"):
   
 actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+=======
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:37:41 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 23ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2018-11-14 17:37:42 +0100
+  
+ActionController::RoutingError (uninitialized constant UsersController):
+  
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `block in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `rescue in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:56:in `load_missing_constant'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.6) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+>>>>>>> 4c725c92ecc40d5bee9dc885e76ce0cff511aa9e
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
 web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
@@ -2835,6 +4322,7 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2018-11-14 18:53:58 +0100
 Processing by HomeController#index as HTML
   Rendering home/index.html.erb within layouts/application
@@ -2859,6 +4347,34 @@ Completed 200 OK in 43ms (Views: 40.2ms | ActiveRecord: 0.0ms)
 Started POST "/" for 127.0.0.1 at 2018-11-14 18:54:35 +0100
   
 ActionController::RoutingError (No route matches [POST] "/"):
+=======
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:38:09 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 16ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 17:38:11 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 19ms (ActiveRecord: 7.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:38:11 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2018-11-14 17:38:15 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+>>>>>>> 4c725c92ecc40d5bee9dc885e76ce0cff511aa9e
   
 actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -2887,6 +4403,7 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2018-11-14 18:56:16 +0100
 Processing by HomeController#index as HTML
   Rendering home/index.html.erb within layouts/application
@@ -3487,5 +5004,370 @@ Processing by HomeController#index as HTML
   Rendering home/index.html.erb within layouts/application
   Rendered home/index.html.erb within layouts/application (4.2ms)
 Completed 200 OK in 200ms (Views: 196.2ms | ActiveRecord: 0.0ms)
+=======
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:40:33 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-11-14 17:40:34 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"sAVkAbf1cTFNH5W93E1jZ11hdRPJyU46QcSA/zTz2XAkh4wIS1XI8Blp3jWTc3e2YnKHDu9P7HBp8bHxhxLKgg=="}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:40:34 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 17:40:37 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 29ms (Views: 24.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:41:03 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-11-14 17:41:04 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"AT2hH1D64P4WA6L1jV9GOGSXW6bXkLrE6JZ4BZHHpPz08F2/RUJNnJukSqc+J42ExCaPQKgaXVt/pwuP830gcw=="}
+Redirected to http://localhost:3000/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:41:04 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 17ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 17:41:05 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:42:23 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 23ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-11-14 17:42:26 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Mud5T1XGV5nAmteFVBF7ZgZ8/BraB/H8Omj6QGR/25PHKoXvQH76+009P9fnabDaps0o/KWNFmOtWYnKBsVfHA=="}
+Redirected to http://localhost:3000/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:42:26 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-11-14 17:42:27 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"MZ8yPy8YSx9ni0YyARa1xvPFW8rFeNRy1o5lPiuy3wnEUs6fOqDmfeosrmCybn56U3SPLLryM+1Bvxa0SQhbhg=="}
+Redirected to http://localhost:3000/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:42:27 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 18ms (Views: 16.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:42:28 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-11-14 17:42:30 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"WZRpfD3UbS8uLhcVURIdR7ahc1rZPpOxIhhO7dfAO8qsWZXcKGzATaOJ/0fiatb7FhCnvKa0dC61KT1ntXq/RQ=="}
+Redirected to http://localhost:3000/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:42:30 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:42:35 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-11-14 17:42:36 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"E2TgnDh+zCm/203PwS4p/7H5U9YEzXicxqxWdy4R6hDmqRw8LcZhSzJ8pZ1yVuJDEUiHMHtHnwNRnSX9TKtunw=="}
+Redirected to http://localhost:3000/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:42:36 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-11-14 17:42:37 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"SzZt5veo/9WOHjO/vApUsULVfS3M3LDMm8deXw+uYNq++5FG4hBStwO52+0Pcp8N4mSpy7NWV1MM9i3VbRTkVQ=="}
+Redirected to http://localhost:3000/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:42:37 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-11-14 17:42:37 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"iSwe/AE5keQNf45AU4qJ0X4ITudSEnDAHB272SnFXvN84eJcFIE8hoDYZhLg8kJt3rmaAS2Yl1+LLMhTS3/afA=="}
+Redirected to http://localhost:3000/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:42:37 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 25ms (Views: 23.9ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-11-14 17:42:38 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"r23BYSx+7JPa5vuC7GACkAsnEIhQeopBJtGBFKt7hY9aoD3BOcZB8VdBE9BfGMksq5bEbi/wbd6x4PKeycEBAA=="}
+Redirected to http://localhost:3000/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:42:38 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-11-14 17:42:44 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"FN70W7+KXc/fklLVX7Lze9lhf7fwzqg3GlTg8x7qJLfhEwj7qjLwrVI1uofsyjjHedCrUY9ET6iNZZN5fFCgOA=="}
+Redirected to http://localhost:3000/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:42:44 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-11-14 17:42:57 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"xlwWvwmhlJz15gczpzCQzG/nXavnShKE+bN7JzNvWSgzkeofHBk5/nhB72EUSFtwz1aJTZjA9RtuggitUdXdpw=="}
+Redirected to http://localhost:3000/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:42:57 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-11-14 17:42:57 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"fu5JenNgbFdPbQQhRM3CUIS5t7Y9vRY+j2WJY/FC5GCLI7XaZtjBNcLK7HP3tQnsJAhjUEI38aEYVPrpk/hg7w=="}
+Redirected to http://localhost:3000/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:42:57 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-11-14 17:42:58 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Vrd/778JVTGjBZKqS/2jG9RBo28sTxVJBvQYabmT5/mjeoNPqrH4Uy6ievj4hWindPB3iVPF8taRxWvj2yljdg=="}
+Redirected to http://localhost:3000/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:42:58 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-11-14 17:43:04 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"McVaibKozdBXAfrgqfajax3qaKJZko9D0jTSzK44agrECKYppxBgstqmErIajmjXvVu8RCYYaNxFBaFGzILuhQ=="}
+Redirected to http://localhost:3000/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:43:04 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:44:03 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 17:44:05 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 31ms (Views: 29.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-11-14 17:44:13 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KF7Cb/cC19T5NDT2WjOH90VQt+Lt0YLnysyuszQ7/4gEpPfu2VsRbi2RE86uL83lCYjMFqBgOzF3A8nFL3vCzA==", "user"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 165ms (ActiveRecord: 1.3ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KF7Cb/cC19T5NDT2WjOH90VQt+Lt0YLnysyuszQ7/4gEpPfu2VsRbi2RE86uL83lCYjMFqBgOzF3A8nFL3vCzA==", "user"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 168ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-11-14 17:44:16 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jxmO+m3/tZEuWA7Usj4kJ63rj+WXOfRkv4g/AY4ZgGJ61HJaeEcY86P/5oYBRu+bDVpbA+izE/souUyL7KME7Q==", "user"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jxmO+m3/tZEuWA7Usj4kJ63rj+WXOfRkv4g/AY4ZgGJ61HJaeEcY86P/5oYBRu+bDVpbA+izE/souUyL7KME7Q==", "user"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 22ms (Views: 21.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-11-14 17:44:30 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 31ms (Views: 29.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-11-14 17:44:36 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uhWy3n9KG/jSj6I6EWlY4tnkZ02L5NGfl60YVl0nMIlP2E5+avK2ml8oSmiiEZNeeVWzq/RuNgAAnGvcP520Bg==", "user"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 152ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:44:36 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:4
+  Rendered home/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-11-14 17:44:38 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Cvmxtuxjk0ljDMB69drhikTS5IFZeLbFGI/oM7KZIHoBXpTp8s31EBuknxceF5t2pvcS6ZrGTLqOFJGr0jeLLg=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/cyril/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-14 17:44:38 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-14 17:46:38 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 23ms (Views: 21.8ms | ActiveRecord: 0.0ms)
+>>>>>>> 4c725c92ecc40d5bee9dc885e76ce0cff511aa9e
 
 
