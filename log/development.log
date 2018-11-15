@@ -6098,6 +6098,7 @@ Processing by HomeController#index as HTML
   Rendered home/index.html.erb within layouts/application (1.0ms)
 Completed 200 OK in 73ms (Views: 71.8ms | ActiveRecord: 0.0ms)
 
+<<<<<<< HEAD
 
 Started GET "/" for 127.0.0.1 at 2018-11-15 12:36:54 +0100
 Processing by HomeController#index as HTML
@@ -6645,3 +6646,14 @@ puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
   ↳ bin/rails:9
   [1m[35m (0.6ms)[0m  [1m[35mCREATE DATABASE "MaGemfile_test" ENCODING = 'unicode'[0m
   ↳ bin/rails:9
+=======
+Started GET "/" for 127.0.0.1 at 2018-11-15 12:01:40 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/florian/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (107.0ms)
+Completed 200 OK in 132ms (Views: 126.0ms | ActiveRecord: 0.0ms)
+
+
+>>>>>>> bot-twitter
