@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
-  devise_for :users
-	root'home#index'
+       
+root 'home#index'
+
+          devise_for :users
+        get '/etudiants', to: 'home#landing1'
+
+
+
 end
+

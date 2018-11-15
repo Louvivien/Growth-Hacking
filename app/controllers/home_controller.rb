@@ -1,6 +1,7 @@
 class HomeController < ApplicationController
 
 before_action :set_user, only: [:show, :edit, :update, :destroy]
+	
 	def index
 	 @user = User.all
 	end 
@@ -8,6 +9,14 @@ before_action :set_user, only: [:show, :edit, :update, :destroy]
 	def show
 
 	end
+
+
+	def landing1
+
+
+	end
+
+
 
 	def edit
 	end
