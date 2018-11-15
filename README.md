@@ -15,7 +15,7 @@ Ce programme est made in Station F by P. de la Tour & F. Pinto & A. Reau & C. Av
 
 
 ## Une interface pour notre application
-Notre magnifique interface permet simplement de lancer toutes nos méthodes avec grande facilité et bonheur. Protitez du tout intégrer pour une expérience utilisateur hors du commun ! Et pour la première en France ! Où ca se passe ? Directement sur la page d'accueil [c'est ici !](https://the-hacking-project-prog.herokuapp.com/)
+Notre magnifique interface permet simplement de lancer toutes nos méthodes avec grande facilité et bonheur. Protitez du "tout-intégré" pour une expérience utilisateur hors du commun ! Et pour la première en France ! Où ca se passe ? Directement sur la page d'accueil [c'est ici !](https://the-hacking-project-prog.herokuapp.com/)
 
 
 ### Metric :straight_ruler:
