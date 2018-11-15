@@ -1,10 +1,10 @@
 class HomeController < ApplicationController
 
 before_action :set_user, only: [:show, :edit, :update, :destroy]
-	
+
 	def index
 	 @user = User.all
-	end 
+	end
 
 	def show
 
@@ -76,7 +76,7 @@ gibbon = Gibbon::Request.new(api_key: "ff53197472e303cf758de97f03779caf-us19")
 		redirect_to root_path
 	end
 
-	private 
+	private
 
 	def set_user
 	 @user = User.find(params[:id])
